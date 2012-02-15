@@ -93,9 +93,11 @@ module Weibo
     end
 
 
-    def upload(status, file)
-      PostBodyHack.apply_hack(:status => status) do
-        perform_post("/statuses/upload.json", build_multipart_bodies(:pic => file, :status => status))
+	#statuses/upload 发送带图片的微博,可带地理位置信息
+	#options: status, pic, lat, long
+    def upload(status, file, query={})
+      PostBodyHack.apply_hack({:status => status}.merge(query)) do
+        perform_post("/statuses/upload.json", build_multipart_bodies({:pic => file, :status => status}.merge(query)))
       end
     end
 
