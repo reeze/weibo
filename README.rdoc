@@ -33,6 +33,10 @@ This gem was made in the process of creating {叽叽喳喳.de}[http://jjzz.de], 
 * {jerrydeng}[https://github.com/jerrydeng]
 * {dongyuwei}[https://github.com/dongyuwei]
 * {steply}[https://github.com/steply]
+* {lgn21st}[https://github.com/lgn21st]
+* {reeze}[https://github.com/reeze]
+* {many others}[https://github.com/ballantyne/weibo/network/members]
+
 
 == Note on Patches/Pull Requests
  
