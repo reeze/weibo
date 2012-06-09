@@ -14,7 +14,7 @@ module Weibo
     end
     
     def consumer
-      @consumer ||= ::OAuth::Consumer.new(@ctoken, @csecret, {:site => 'http://api.weibo.com'}.merge(consumer_options))
+      @consumer ||= ::OAuth::Consumer.new(@ctoken, @csecret, {:site => 'http://api.t.sina.com.cn'}.merge(consumer_options))
     end
     
     def set_callback_url(url)
